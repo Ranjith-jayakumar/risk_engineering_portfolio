@@ -1,0 +1,122 @@
+{
+    "claim_id": "C001",
+    "internal": {
+        "account_and_exposure": {
+            "client_id": "C001",
+            "occupancy_type": "Manufacturing",
+            "total_insured_value": 120000000,
+            "max_location_limit": 84000000,
+            "business_interruption_si": 48000000,
+            "currency": "USD"
+        },
+        "site_and_operations": {
+            "client_id": "C001",
+            "site_area_m2": 40000,
+            "number_of_buildings": 3,
+            "operating_hours": "16x6",
+            "occupancy_load": 200,
+            "criticality": "Medium"
+        },
+        "building_construction": {
+            "client_id": "C001",
+            "year_built": 2010,
+            "construction_type": "Reinforced Concrete",
+            "number_of_floors": 5,
+            "fire_resistance_min": 120,
+            "basement": false
+        },
+        "fire_protection": {
+            "client_id": "C001",
+            "sprinkler_present": true,
+            "sprinkler_coverage_pct": 100,
+            "fire_water_supply": "Public + Tank",
+            "fire_pump": true,
+            "detection_system": "Smoke + Heat"
+        },
+        "hazard_presence": {
+            "client_id": "C001",
+            "flammable_materials": true,
+            "high_voltage": false,
+            "high_temperature": true,
+            "pressure_systems": false
+        },
+        "risk_management": {
+            "client_id": "C001",
+            "housekeeping_score": 4,
+            "preventive_maintenance": true,
+            "emergency_plan": true,
+            "fire_drills_per_year": 2
+        },
+        "loss_history": {
+            "client_id": "C001",
+            "loss_last_5_years": false,
+            "largest_loss_amount": 0,
+            "regulatory_compliance": "Compliant"
+        },
+        "property_details": {
+            "client_id": "C001",
+            "property_name": "Tesla Fremont Factory",    
+            "occupancy_type": "Manufacturing",
+            "address": "45500 Fremont Blvd",
+            "city": "Fremont",
+            "state": "CA",
+            "latitude": 37.4949,
+            "longitude": -121.9443,
+            "country": "USA"
+        },
+        "location_details": {
+            "client_id": "C001",
+            "address": "Manufacturing Estate, Plot 1",   
+            "city": "London",
+            "country": "United Kingdom",
+            "latitude": 51.5,
+            "longitude": -0.12,
+            "urban_rural": "Urban",
+            "industrial_zone": true
+        }
+    },
+    "external": {
+        "location": {
+            "latitude": 37.4949,
+            "longitude": -121.9443
+        },
+        "weather": {
+            "max_wind_speed_kmh": 31.4,
+            "max_wind_gust_kmh": null,
+            "source": "Meteostat"
+        },
+        "earthquake": {
+            "events_last_30_days": 0,
+            "max_magnitude": 0,
+            "radius_km": 300,
+            "seismic_risk_level": "Low",
+            "source": "USGS Earthquake Feed",
+            "confidence": "Medium"
+        },
+        "fire_brigade": {
+            "fire_station_found": true,
+            "nearest_station_distance_km": 2.43,
+            "estimated_response_time_min": 4.2,
+            "stations_within_radius": 5,
+            "assumed_avg_speed_kmh": 35,
+            "source": "OpenStreetMap (OSMnx)",
+            "confidence": "Medium"
+        },
+        "flood": {
+            "elevation_m": 50,
+            "flood_risk_level": "Low",
+            "method": "Elevation-based proxy",
+            "confidence": "Low"
+        },
+        "generated_at": "2025-12-25T02:01:34.984933"     
+    },
+    "derived": {
+        "individual scores": {
+            "fire_risk_score": 0.91,
+            "natcat_score": 0.79,
+            "operational_risk_score": 0.5
+        },
+        "overall_risk_score": 0.78,
+        "risk_grade": "B"
+    }
+}

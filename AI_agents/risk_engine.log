@@ -1,0 +1,68 @@
+2026-01-23 06:01:29,786 - RiskAssesser - WARNING - Modules imported from root directory (src not found).
+2026-01-23 06:01:29,789 - RiskAssesser - ERROR - Failed to initialize ML models: [Errno 2] No such file or directory: '..\\Risk_Engineering\\src\\ml_algo\\fire_risk\\data\\fire_risk_dataset.csv'
+2026-01-23 06:01:56,118 - InternalDataCollector - INFO - fetching internal data for Claim ID: C001
+2026-01-23 06:01:56,180 - InternalDataCollector - INFO -  Internal data fetched successfully
+2026-01-23 06:01:56,181 - ExternalDataCollector - INFO - gathering External data 
+2026-01-23 06:01:56,234 - ExternalDataCollector - INFO - Fetching weather data 
+2026-01-23 06:01:56,392 - ExternalDataCollector - INFO -  weather data gathered successfully 
+2026-01-23 06:01:56,393 - ExternalDataCollector - INFO - Checking seismic activity within 300km of the client property 
+2026-01-23 06:01:58,481 - ExternalDataCollector - INFO - seismic activity  assessed successfully
+2026-01-23 06:01:58,483 - ExternalDataCollector - INFO - Querying OpenStreetMap for fire stations near 
+2026-01-23 06:02:11,404 - ExternalDataCollector - INFO -  gathered  data for Nearest station 
+2026-01-23 06:02:11,406 - ExternalDataCollector - INFO - Master data fetch completed successfully.
+2026-01-23 06:02:11,407 - ExternalDataCollector - INFO -  External data fetched successfully
+2026-01-23 06:02:11,408 - RiskAssesser - INFO - Computing risk  metrics
+2026-01-23 06:02:11,460 - RiskAssesser - ERROR - Error in Fire Risk Model Inference, using fallback calculation.
+Traceback (most recent call last):
+  File "C:\Users\Ranjith\Desktop\Risk_Engineering\src\gatheralldata.py", line 110, in compute_derived_metrics
+    prediction = fire_model.inference(fire_risk_user_input)
+                 ^^^^^^^^^^
+NameError: name 'fire_model' is not defined
+2026-01-23 06:02:11,468 - RiskAssesser - ERROR - Error in NatCat Model Inference, using fallback.
+Traceback (most recent call last):
+  File "C:\Users\Ranjith\Desktop\Risk_Engineering\src\gatheralldata.py", line 141, in compute_derived_metrics
+    prediction = natcat_model.inference(nat_risk_user_input)
+                 ^^^^^^^^^^^^
+NameError: name 'natcat_model' is not defined. Did you mean: 'NATCAT_Model'?
+2026-01-23 06:02:11,474 - RiskAssesser - ERROR - Error in Operational Risk Model Inference, using fallback.
+Traceback (most recent call last):
+  File "C:\Users\Ranjith\Desktop\Risk_Engineering\src\gatheralldata.py", line 163, in compute_derived_metrics
+    prediction = op_model.inference(operational_risk_user_input)
+                 ^^^^^^^^
+NameError: name 'op_model' is not defined
+2026-01-23 06:02:11,480 - RiskAssesser - INFO - risk scoring completed 
+2026-01-23 06:02:11,481 - RiskAssesser - INFO - Assessment complete. Overall Score: 0.78, Grade: B
+2026-01-23 06:08:49,628 - RiskAssesser - WARNING - Modules imported from root directory (src not found).
+2026-01-23 06:08:49,633 - RiskAssesser - ERROR - Failed to initialize ML models: [Errno 2] No such file or directory: '..\\Risk_Engineering\\src\\ml_algo\\fire_risk\\data\\fire_risk_dataset.csv'
+2026-01-23 06:08:55,029 - InternalDataCollector - INFO - fetching internal data for Claim ID: C001
+2026-01-23 06:08:55,091 - InternalDataCollector - INFO -  Internal data fetched successfully
+2026-01-23 06:08:55,093 - ExternalDataCollector - INFO - gathering External data 
+2026-01-23 06:08:55,145 - ExternalDataCollector - INFO - Fetching weather data 
+2026-01-23 06:08:55,290 - ExternalDataCollector - INFO -  weather data gathered successfully 
+2026-01-23 06:08:55,291 - ExternalDataCollector - INFO - Checking seismic activity within 300km of the client property 
+2026-01-23 06:08:57,342 - ExternalDataCollector - INFO - seismic activity  assessed successfully
+2026-01-23 06:08:57,344 - ExternalDataCollector - INFO - Querying OpenStreetMap for fire stations near 
+2026-01-23 06:09:02,861 - ExternalDataCollector - INFO -  gathered  data for Nearest station 
+2026-01-23 06:09:02,863 - ExternalDataCollector - INFO - Master data fetch completed successfully.
+2026-01-23 06:09:02,864 - ExternalDataCollector - INFO -  External data fetched successfully
+2026-01-23 06:09:02,865 - RiskAssesser - INFO - Computing risk  metrics
+2026-01-23 06:09:02,918 - RiskAssesser - ERROR - Error in Fire Risk Model Inference, using fallback calculation.
+Traceback (most recent call last):
+  File "C:\Users\Ranjith\Desktop\Risk_Engineering\src\gatheralldata.py", line 110, in compute_derived_metrics
+    prediction = fire_model.inference(fire_risk_user_input)
+                 ^^^^^^^^^^
+NameError: name 'fire_model' is not defined
+2026-01-23 06:09:02,926 - RiskAssesser - ERROR - Error in NatCat Model Inference, using fallback.
+Traceback (most recent call last):
+  File "C:\Users\Ranjith\Desktop\Risk_Engineering\src\gatheralldata.py", line 141, in compute_derived_metrics
+    prediction = natcat_model.inference(nat_risk_user_input)
+                 ^^^^^^^^^^^^
+NameError: name 'natcat_model' is not defined. Did you mean: 'NATCAT_Model'?
+2026-01-23 06:09:02,932 - RiskAssesser - ERROR - Error in Operational Risk Model Inference, using fallback.
+Traceback (most recent call last):
+  File "C:\Users\Ranjith\Desktop\Risk_Engineering\src\gatheralldata.py", line 163, in compute_derived_metrics
+    prediction = op_model.inference(operational_risk_user_input)
+                 ^^^^^^^^
+NameError: name 'op_model' is not defined
+2026-01-23 06:09:02,938 - RiskAssesser - INFO - risk scoring completed 
+2026-01-23 06:09:02,939 - RiskAssesser - INFO - Assessment complete. Overall Score: 0.78, Grade: B
